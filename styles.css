@@ -1,0 +1,110 @@
+div.centerboard{
+    width:75%;
+    height:50%;
+    margin: auto;
+    padding:5% 0;
+}
+
+div.centerboard > table{
+    width: 100%;
+}
+
+table{
+    border-collapse: collapse;
+}
+.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+td#employeeForm {
+    width: 40%;
+}
+
+td#employeeData {
+    align-content: start;
+    border: none;
+    width: 60%;
+    padding: 0 10px;
+}
+
+/*tr:nth-child(even),*/table.list thead>tr {
+    background-color: #000080;
+    color: #ffffff
+}
+
+table.list thead>tr>th {
+    border: #000080;
+    text-align: center;
+}
+
+table.list th, table.list td {
+    width: 25%
+}
+
+/* input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+} */
+
+.birth-info-row {
+    display: flex;
+    gap: 20px; /* Space between the two groups */
+}
+
+.birth-info-group {
+    flex: 1; /* Distribute space evenly */
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}

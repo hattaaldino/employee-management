@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="centerboard">
+        <table>
+            <tr>
+                <td id="employeeForm">
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div>
+                            <label>Identification Number*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <input type="text" name="id-number" id="id-number">
+                        </div>
+                        <div>
+                            <label>Place and date of Birth*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <div>
+                                <input style="width: 59%" type="text" name="pob" id="pob">
+                                <input style="width: 40%" type="date" name="dob" id="dob">
+                            </div>
+                        </div>
+                        <div>
+                            <label>Age</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <input type="text" name="age" id="age" disabled>
+                        </div>
+                        <div>
+                            <label>Occupation*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <select id="occupation" name="occupation">
+                                <option value=""></option>
+                                <option value="Unemployed">Unemployed</option>
+                                <option value="Programmer">Programmer</option>
+                                <option value="Designer">Designer</option>
+                                <option value="Architect">Architect</option>
+                                <option value="Artist">Artist</option>
+                              </select>
+                        </div>
+                        <div>
+                            <label>Address</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <textarea name="address" id="address"></textarea>
+                        </div>
+                        <div  class="form-action-buttons">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </td>
+                <td id="employeeData">
+                    <div>
+                        <table class="list" id="employeeList">
+                            <thead>
+                                <tr>
+                                    <th>Full Name</th>
+                                    <th>EMP Code</th>
+                                    <th>Salary</th>
+                                    <th>City</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
